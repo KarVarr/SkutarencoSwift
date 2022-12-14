@@ -34,3 +34,22 @@ if Double(int) < double {
 } else {
     //print("error")
 }
+
+//MARK: - lesson #3
+
+let train = (pushUps: 20, pullUp: 30, squat: 10)
+var trainFriend = (pushUps: 20, pullUp: 30, squat: 10)
+trainFriend.pushUps = 25
+trainFriend.pullUp = 20
+trainFriend.squat = 13
+/*
+print(train)
+print(train.pushUps)
+print(train.1)
+print(train.squat)
+print(trainFriend)
+*/
+
+let sumSquat = train.squat - trainFriend.squat
+//print("My friend dose \(abs(sumSquat)) more squats then me ")
+

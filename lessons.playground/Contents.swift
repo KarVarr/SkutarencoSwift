@@ -53,3 +53,72 @@ print(trainFriend)
 let sumSquat = train.squat - trainFriend.squat
 //print("My friend dose \(abs(sumSquat)) more squats then me ")
 
+
+//MARK: - lesson #4
+
+let a0 :String? = "4"
+let a1 :String? = "8"
+let a2 :String? = "4re"
+let a3 :String? = "ty"
+let a4 :String? = "9"
+
+Int(a1!)! + Int(a0!)! + Int(a4!)!
+
+if let q2 = a2 {
+    Int(q2)
+}
+
+if let q3 = a3{
+    Int(q3)
+}
+
+
+
+var tuple: (statusCode: Int?, message: String?, errorText: String?) = (255, "hello", "error")
+
+if let code = tuple.statusCode {
+    if code > 200 && code < 300{
+        tuple.message
+    } else {
+        tuple.errorText
+    }
+}
+
+var tuple2: ( message: String?, errorText: String?) = ( nil, "error")
+
+if tuple2.message == nil {
+    //print("nil")
+} else {
+    //print("message not a nil")
+}
+if tuple2.errorText == nil {
+    //print("nil")
+} else {
+    //print("errorText not a nil")
+}
+
+var studentMisha : (studentName: String?, numberAuto: Int?, score: Int?)
+studentMisha.studentName = "Misha"
+studentMisha.score = 2
+//
+//if let auto = studentMisha.numberAuto {
+//    print("Student's car number is \(auto)")
+//} else {
+//    print("His not have a car")
+//}
+
+var studentNikita : (studentName: String?, numberAuto: Int?, score: Int?)
+studentNikita.studentName = "Nikita"
+studentNikita.numberAuto = 777
+
+//if let hisName = studentNikita.studentName, let numberAuto = studentNikita.numberAuto {
+//    print("Student's name is \(hisName)")
+//    print("Student's car number is \(numberAuto)")
+//    
+//} else {
+//    print("His not here")
+//    print("His not have a car")
+//}
+
+
+

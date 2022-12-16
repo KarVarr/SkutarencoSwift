@@ -43,12 +43,12 @@ trainFriend.pushUps = 25
 trainFriend.pullUp = 20
 trainFriend.squat = 13
 /*
-print(train)
-print(train.pushUps)
-print(train.1)
-print(train.squat)
-print(trainFriend)
-*/
+ print(train)
+ print(train.pushUps)
+ print(train.1)
+ print(train.squat)
+ print(trainFriend)
+ */
 
 let sumSquat = train.squat - trainFriend.squat
 //print("My friend dose \(abs(sumSquat)) more squats then me ")
@@ -152,3 +152,41 @@ if chessDesk % 2 == 0 {
 } else {
     //print("black field")
 }
+
+//MARK: - lesson #6
+
+let b0 :String? = "4"
+let b1 :String? = "8"
+let b2 :String? = "4re"
+let b3 :String? = "ty"
+let b4 :String? = "9"
+
+let lesson6Sum = Int(b0 ?? "0")  ?? 0
+let lesson6Sum2 = Int(b1 ?? "0") ?? 0
+let lesson6Sum3 = Int(b2 ?? "0") ?? 0
+let lesson6Sum4 = Int(b3 ?? "0") ?? 0
+let lesson6Sum5 = Int(b4 ?? "0") ?? 0
+
+//print(lesson6Sum + lesson6Sum2 + lesson6Sum3 + lesson6Sum4 + lesson6Sum5)
+
+let coolSimbol = "\u{1F60E}"
+
+coolSimbol.count
+(coolSimbol as NSString).length
+
+let char : Character = "e"
+var alphabet = "abcdefghijklmnopqrstuvwxyz"
+var countAlphaber = 1
+for i in alphabet {
+    if i == char {
+        //print(" index of char = \(countAlphaber)")
+        
+    } else {
+        countAlphaber += 1
+    }
+}
+
+
+
+
+

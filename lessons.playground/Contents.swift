@@ -114,11 +114,41 @@ studentNikita.numberAuto = 777
 //if let hisName = studentNikita.studentName, let numberAuto = studentNikita.numberAuto {
 //    print("Student's name is \(hisName)")
 //    print("Student's car number is \(numberAuto)")
-//    
+//
 //} else {
 //    print("His not here")
 //    print("His not have a car")
 //}
 
+//MARK: - lesson #5
+func year(_ days: Int) -> Int {
+    return 31536000 - days * 24 * 60 * 60
+}
+
+let myDay = year(337)
+
+func block(_ day: Int) -> Int {
+    switch day {
+    case 0...3:
+        return 1
+    case 4...6:
+        return 2
+    case 7...9:
+        return 3
+    case 10...12:
+        return 4
+    default :
+        return 0
+    }
+    
+}
+block(12)
 
 
+let chessDesk = 19
+
+if chessDesk % 2 == 0 {
+    //print("white field")
+} else {
+    //print("black field")
+}

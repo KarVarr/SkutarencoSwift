@@ -314,3 +314,15 @@ func reverseArray(arr: [Int]) -> [Int] {
     return newArr
 }
 reverseArray(arr: [1,3,5,7,9])
+
+//MARK: - Lesson # 11
+// TODO: adflkajdsfa
+// FIXME: lkadjflkajsdf
+
+ let numberArraySort = [1,4,2,8,5,9,44,87,23,0,54,33,11,16,88,53,3]
+numberArraySort.sorted(by: >)
+numberArraySort.sorted(by: <)
+
+
+var letter = "qwertyu80iop6asdfghjk32lzxcv5bnm"
+let letterArray = Array(letter).sorted(by: <)

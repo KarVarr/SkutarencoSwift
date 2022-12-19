@@ -186,7 +186,95 @@ for i in alphabet {
     }
 }
 
+//MARK: - lesson #7
+
+var arr = ["a", "b", "c", "e", "f", "d"]
+
+arr.insert("55", at: arr.count / 2)
+
+let days = [31, 28 ,31 , 30 ,31 ,30 ,31, 31 ,30, 31 ,30 ,31]
+
+let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
 
+for i in 0...11 {
+   //print("In \(month[i]): \(days[i]) days ")
+}
+for i in (0...11).reversed() {
+   // print("In \(month[i]): \(days[i]) days ")
+}
+
+var alphabet2 = Array(alphabet).reversed()
+var arrForAlphabet2 = String()
+for i in alphabet2 {
+    arrForAlphabet2.append(String(i))
+}
+//print(Array(arrForAlphabet2))
 
 
+//MARK: - Lesson # 8
+
+var dict = ["Karen": 4, "Suzzana": 8, "Bob": 5, "Ror": 3]
+
+dict["Karen"] = 7
+dict["Suzzana"] = 9
+dict.removeValue(forKey: "Ror")
+dict
+var sumDict = 0
+for i in dict.values {
+    sumDict += i
+}
+sumDict
+var average = sumDict / dict.count
+
+var dictDays = ["January": 31, "February": 28, "March": 31, "April": 30, "May": 31, "June": 30, "July": 31, "August": 31, "September": 30, "October": 31, "November": 30, "December": 31]
+
+for (key, value) in dictDays {
+   // print("In month \(key) \(value) days")
+}
+
+for i in dictDays.keys {
+   // print("Month \(i), days \(dictDays[i] ?? 0)")
+}
+
+//MARK: - lesson #9
+
+let ageMark = 34
+/*
+switch ageMark {
+case 0...18:
+    print("😗")
+case 18...28:
+    print("😎")
+default:
+    print("😶‍🌫️")
+}
+
+let student = ["Karen","Vardanian","Robertovich"]
+
+switch student {
+case student where student[0].prefix(1) == "A" || student[0].prefix(1) == "O":
+    print("Hello Karen")
+case student where student[2].prefix(1) == "V" || student[2].prefix(1) == "R":
+    print("Hello \(student[0]) \(student[2])")
+case student where student[1].prefix(1) == "E" || student[2].prefix(1) == "Z":
+    print("Hello \(student[1])")
+default:
+   print("Hello \(student[1]) \(student[0]) \(student[2])")
+    
+}
+*/
+
+//let points : (x:Int,y:String)
+//points.x = 5
+//points.y = "D"
+//
+//switch points {
+//case let (x) where x > 5:
+//    print("You lose")
+//    
+//default: break
+//}
+ 
+
+//MARK: - Lesson #10

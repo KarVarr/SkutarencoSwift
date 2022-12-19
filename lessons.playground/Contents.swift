@@ -278,3 +278,39 @@ default:
  
 
 //MARK: - Lesson #10
+
+func heart() -> String{
+    return "♠️"
+}
+
+func hand() -> String{
+    return "💪"
+}
+func smile() -> String{
+    return "😁"
+}
+//print("My heart is black \(heart()), my hand is strong \(hand()) and my smile is perfect \(smile())")
+
+
+func chess(_ letter: String, _ number: Int) -> String {
+    
+    if number % 2 == 1 && letter == "A" || letter == "C" || letter == "E" || letter == "G" {
+        return "black"
+    } else {
+        return "white"
+    }
+    
+}
+
+chess("G", 3)
+let currentChess = chess
+//print("The current squer is \( currentChess("E", 4))")
+
+func reverseArray(arr: [Int]) -> [Int] {
+    var newArr = [Int]()
+    for i in arr {
+        newArr.insert(i, at: 0)
+    }
+    return newArr
+}
+reverseArray(arr: [1,3,5,7,9])

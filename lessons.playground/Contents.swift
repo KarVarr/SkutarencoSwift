@@ -326,3 +326,57 @@ numberArraySort.sorted(by: <)
 
 var letter = "qwertyu80iop6asdfghjk32lzxcv5bnm"
 let letterArray = Array(letter).sorted(by: <)
+
+
+//MARK: - Lesson # 12
+
+enum Action  {
+    case Run(jag: String)
+    case Walk(meters: Int, speed: Int)
+    case Sleep
+    case eat
+    
+    enum Direction {
+        case Left
+        case Right
+    }
+}
+
+var action = Action.Walk(meters: 100, speed: 4)
+Action.Run(jag: "run slowly")
+ 
+var derict = Action.Direction.Left
+
+enum Color : String{
+    case Black = "Black"
+    case White = "White"
+}
+enum Chess {
+    case Pawns(color: String, letter: String, number: Int)
+    case Bishops(color: String, letter: String, number: Int)
+    case Knights(color: String, letter: String, number: Int)
+    case Rooks(color: String, letter: String, number: Int)
+    case Queen(color: String, letter: String, number: Int)
+    case King(color: String, letter: String, number: Int)
+}
+
+let king = Chess.King(color: Color.Black.rawValue, letter: "C", number: 6)
+let kingOpponent = Chess.King(color: Color.White.rawValue, letter: "D", number: 3)
+let queen = Chess.Queen(color: Color.White.rawValue, letter: "F", number: 4)
+
+enum Chess2 : String {
+    case Pawns = "Pawns"
+    case Bishops = "Bishops"
+    case Knights = "Knights"
+    case Rooks = "Rooks"
+    case Queen = "Queen"
+    case King = "King"
+}
+
+let chessArrayEnum = [Chess2.Pawns.rawValue, Chess2.Bishops.rawValue, Chess2.Knights.rawValue, Chess2.Rooks.rawValue,Chess2.Queen.rawValue,Chess2.King.rawValue]
+
+
+func chessFigure(_ arr : [String], _ number : Int) {
+    print(arr[number])
+}
+chessFigure(chessArrayEnum, 5)

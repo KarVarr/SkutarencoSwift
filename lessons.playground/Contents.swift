@@ -377,6 +377,68 @@ let chessArrayEnum = [Chess2.Pawns.rawValue, Chess2.Bishops.rawValue, Chess2.Kni
 
 
 func chessFigure(_ arr : [String], _ number : Int) {
-    print(arr[number])
+   // print(arr[number])
 }
 chessFigure(chessArrayEnum, 5)
+
+
+//MARK: - Lesson # 13
+
+class Student {
+    var name : String
+    var age : Int
+    
+    init (name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+}
+
+let student1 = Student(name: "Bob", age: 21)
+student1.name
+student1.age
+
+student1.age = 25
+student1.age
+
+struct StudentStract {
+    let name : String
+    let age : Int
+}
+
+let stStruct = StudentStract(name: "Ron", age: 18)
+
+stStruct.name
+stStruct.age
+
+struct Puple {
+    var firstName:String
+    var lastName: String
+    var year: Int
+    var averageScore: Int
+}
+
+var koly = Puple(firstName: "Koly", lastName: "Lipilin", year: 1988, averageScore: 4)
+var kolyBrat = Puple(firstName: "Toly", lastName: "Lipilin", year: 1990, averageScore: 6)
+var masha = Puple(firstName: "Macha", lastName: "Ivanova", year: 1990, averageScore: 2)
+var sacha = Puple(firstName: "Sacha", lastName: "Aslanov", year: 1993, averageScore: 7)
+var alex = Puple(firstName: "Alexsey", lastName: "Udin", year: 1992, averageScore: 5)
+
+var arrayOfPuple = [koly,kolyBrat,masha,sacha,alex]
+
+func book(st: Puple) -> Void{
+   // print("My name is \(st.lastName) \(st.firstName) and my age is \(2022 - st.year). I have the score \(st.averageScore)")
+}
+
+for i in 0...arrayOfPuple.count - 1 {
+   // print ( "Student number \(i + 1) \( book(st: arrayOfPuple[i]) )" )
+}
+
+//print(arrayOfPuple.sorted(by: {$0.averageScore > $1.averageScore}) )
+//print(arrayOfPuple.sorted(by: {$0.lastName < $1.lastName}) )
+//print(arrayOfPuple.sorted(by: {$0.lastName == $1.lastName ? $0.firstName < $1.firstName : $0.lastName < $1.lastName}))
+
+var copyArray = arrayOfPuple
+print( copyArray[0].firstName = "Bob")
+
+

@@ -442,3 +442,53 @@ var copyArray = arrayOfPuple
 print( copyArray[0].firstName = "Bob")
 
 
+//MARK: - lesson # 14
+
+struct People {
+    var firstName: String {
+        didSet {
+            firstName = firstName.capitalized
+        }
+    }
+    var lastName: String {
+        didSet {
+            lastName = lastName.capitalized
+        }
+    }
+    var fullName: String {
+        get {
+            return firstName + " " + lastName
+        }
+        set {
+            let word = newValue.components(separatedBy: " ")
+            
+            if word.count > 0 {
+                firstName = word[0]
+            }
+            if word.count > 1 {
+                lastName = word[1]
+            }
+        }
+    }
+    
+    var year: Int
+    var howOldAreYou : Int{
+        2022 - year
+    }
+    
+    var schoolYear : Int {
+        return year + 6
+    }
+    var schoolTime : Int {
+        return schoolYear + 10
+    }
+}
+
+var karen = People(firstName: "Karen", lastName: "Vardanian", year: 1988 )
+print(karen.fullName)
+karen.fullName = "BoB MaRtiroRian"
+print(karen.fullName)
+karen.year
+karen.howOldAreYou
+karen.schoolYear
+karen.schoolTime

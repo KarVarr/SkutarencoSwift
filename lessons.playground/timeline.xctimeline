@@ -3,7 +3,19 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/karenvardanian/Desktop/iOS/SkutarencoSwift/lessons.playground#CharacterRangeLen=0&amp;CharacterRangeLoc=5160&amp;EndingColumnNumber=0&amp;EndingLineNumber=240&amp;StartingColumnNumber=0&amp;StartingLineNumber=240&amp;Timestamp=693334996.273069"
+         documentLocation = "file:///Users/karenvardanian/Desktop/iOS/SkutarencoSwift/lessons.playground#CharacterRangeLen=0&amp;CharacterRangeLoc=5164&amp;EndingColumnNumber=0&amp;EndingLineNumber=240&amp;StartingColumnNumber=0&amp;StartingLineNumber=240&amp;Timestamp=693421770.795963"
+         selectedRepresentationIndex = "0">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/karenvardanian/Desktop/iOS/SkutarencoSwift/lessons.playground#CharacterRangeLen=9&amp;CharacterRangeLoc=12755&amp;EndingColumnNumber=4&amp;EndingLineNumber=586&amp;StartingColumnNumber=70&amp;StartingLineNumber=585&amp;Timestamp=693421770.796074"
+         selectedRepresentationIndex = "0">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/karenvardanian/Desktop/iOS/SkutarencoSwift/lessons.playground#CharacterRangeLen=9&amp;CharacterRangeLoc=12757&amp;EndingColumnNumber=6&amp;EndingLineNumber=586&amp;StartingColumnNumber=72&amp;StartingLineNumber=585&amp;Timestamp=693421770.796136"
+         selectedRepresentationIndex = "0">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/karenvardanian/Desktop/iOS/SkutarencoSwift/lessons.playground#CharacterRangeLen=9&amp;CharacterRangeLoc=12845&amp;EndingColumnNumber=8&amp;EndingLineNumber=589&amp;StartingColumnNumber=73&amp;StartingLineNumber=588&amp;Timestamp=693421770.796199"
          selectedRepresentationIndex = "0">
       </LoggerValueHistoryTimelineItem>
    </TimelineItems>

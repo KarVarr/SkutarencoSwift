@@ -198,10 +198,10 @@ let month = ["January", "February", "March", "April", "May", "June", "July", "Au
 
 
 for i in 0...11 {
-   //print("In \(month[i]): \(days[i]) days ")
+    //print("In \(month[i]): \(days[i]) days ")
 }
 for i in (0...11).reversed() {
-   // print("In \(month[i]): \(days[i]) days ")
+    // print("In \(month[i]): \(days[i]) days ")
 }
 
 var alphabet2 = Array(alphabet).reversed()
@@ -230,40 +230,40 @@ var average = sumDict / dict.count
 var dictDays = ["January": 31, "February": 28, "March": 31, "April": 30, "May": 31, "June": 30, "July": 31, "August": 31, "September": 30, "October": 31, "November": 30, "December": 31]
 
 for (key, value) in dictDays {
-   // print("In month \(key) \(value) days")
+    // print("In month \(key) \(value) days")
 }
 
 for i in dictDays.keys {
-   // print("Month \(i), days \(dictDays[i] ?? 0)")
+    // print("Month \(i), days \(dictDays[i] ?? 0)")
 }
 
 //MARK: - lesson #9
 
 let ageMark = 34
 /*
-switch ageMark {
-case 0...18:
-    print("😗")
-case 18...28:
-    print("😎")
-default:
-    print("😶‍🌫️")
-}
-
-let student = ["Karen","Vardanian","Robertovich"]
-
-switch student {
-case student where student[0].prefix(1) == "A" || student[0].prefix(1) == "O":
-    print("Hello Karen")
-case student where student[2].prefix(1) == "V" || student[2].prefix(1) == "R":
-    print("Hello \(student[0]) \(student[2])")
-case student where student[1].prefix(1) == "E" || student[2].prefix(1) == "Z":
-    print("Hello \(student[1])")
-default:
-   print("Hello \(student[1]) \(student[0]) \(student[2])")
-    
-}
-*/
+ switch ageMark {
+ case 0...18:
+ print("😗")
+ case 18...28:
+ print("😎")
+ default:
+ print("😶‍🌫️")
+ }
+ 
+ let student = ["Karen","Vardanian","Robertovich"]
+ 
+ switch student {
+ case student where student[0].prefix(1) == "A" || student[0].prefix(1) == "O":
+ print("Hello Karen")
+ case student where student[2].prefix(1) == "V" || student[2].prefix(1) == "R":
+ print("Hello \(student[0]) \(student[2])")
+ case student where student[1].prefix(1) == "E" || student[2].prefix(1) == "Z":
+ print("Hello \(student[1])")
+ default:
+ print("Hello \(student[1]) \(student[0]) \(student[2])")
+ 
+ }
+ */
 
 //let points : (x:Int,y:String)
 //points.x = 5
@@ -275,7 +275,7 @@ default:
 //    
 //default: break
 //}
- 
+
 
 //MARK: - Lesson #10
 
@@ -319,7 +319,7 @@ reverseArray(arr: [1,3,5,7,9])
 // TODO: adflkajdsfa
 // FIXME: lkadjflkajsdf
 
- let numberArraySort = [1,4,2,8,5,9,44,87,23,0,54,33,11,16,88,53,3]
+let numberArraySort = [1,4,2,8,5,9,44,87,23,0,54,33,11,16,88,53,3]
 numberArraySort.sorted(by: >)
 numberArraySort.sorted(by: <)
 
@@ -344,7 +344,7 @@ enum Action  {
 
 var action = Action.Walk(meters: 100, speed: 4)
 Action.Run(jag: "run slowly")
- 
+
 var derict = Action.Direction.Left
 
 enum Color : String{
@@ -377,7 +377,7 @@ let chessArrayEnum = [Chess2.Pawns.rawValue, Chess2.Bishops.rawValue, Chess2.Kni
 
 
 func chessFigure(_ arr : [String], _ number : Int) {
-   // print(arr[number])
+    // print(arr[number])
 }
 chessFigure(chessArrayEnum, 5)
 
@@ -427,11 +427,11 @@ var alex = Puple(firstName: "Alexsey", lastName: "Udin", year: 1992, averageScor
 var arrayOfPuple = [koly,kolyBrat,masha,sacha,alex]
 
 func book(st: Puple) -> Void{
-   // print("My name is \(st.lastName) \(st.firstName) and my age is \(2022 - st.year). I have the score \(st.averageScore)")
+    // print("My name is \(st.lastName) \(st.firstName) and my age is \(2022 - st.year). I have the score \(st.averageScore)")
 }
 
 for i in 0...arrayOfPuple.count - 1 {
-   // print ( "Student number \(i + 1) \( book(st: arrayOfPuple[i]) )" )
+    // print ( "Student number \(i + 1) \( book(st: arrayOfPuple[i]) )" )
 }
 
 //print(arrayOfPuple.sorted(by: {$0.averageScore > $1.averageScore}) )
@@ -439,7 +439,7 @@ for i in 0...arrayOfPuple.count - 1 {
 //print(arrayOfPuple.sorted(by: {$0.lastName == $1.lastName ? $0.firstName < $1.firstName : $0.lastName < $1.lastName}))
 
 var copyArray = arrayOfPuple
-print( copyArray[0].firstName = "Bob")
+//print( copyArray[0].firstName = "Bob")
 
 
 //MARK: - lesson # 14
@@ -485,10 +485,108 @@ struct People {
 }
 
 var karen = People(firstName: "Karen", lastName: "Vardanian", year: 1988 )
-print(karen.fullName)
+//print(karen.fullName)
 karen.fullName = "BoB MaRtiroRian"
-print(karen.fullName)
+//print(karen.fullName)
 karen.year
 karen.howOldAreYou
 karen.schoolYear
 karen.schoolTime
+
+
+//MARK: - lesson # 15
+
+class Human {
+    var name : String
+    var age : Int
+    
+    static let year = 1999
+    
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+}
+
+let human = Human(name: "Bob", age: 43)
+human.name
+human.age
+
+Human.year
+
+var MaxSizeOnDisc = 100_000
+
+ struct DiscriptionFile {
+    static var path = "c/windows/systemFile/"
+    var name: String
+    static var maxSizeOnDisk = MaxSizeOnDisc - 10_000
+    static var pathToFile = "\(DiscriptionFile.path)music"
+    var fileIsHiden : Bool
+    var storage: String
+}
+
+
+let music = DiscriptionFile( name: "music",  fileIsHiden: true, storage: "ABBA, U2, Disco 80s")
+
+
+music.name
+music.fileIsHiden
+music.storage
+DiscriptionFile.maxSizeOnDisk
+DiscriptionFile.path
+
+
+enum ColorEnum : Int {
+    case Red = 255
+    case Green = 0
+    case Blue = 150
+    
+    static var howManyColors  = 3
+}
+
+
+ColorEnum.howManyColors
+
+let maxWeight = 120
+let maxHeight = 210
+let maxAge = 99
+
+
+class HumanClass {
+    var name: String
+    var age: Int {
+        didSet {
+            if age > maxAge {
+                age = oldValue
+            }
+        }
+    }
+    var weight: Int
+    var height: Int {
+        didSet {
+            if height > maxHeight {
+                height = oldValue
+            }
+        }
+    }
+    
+    static var humanTotal = 0
+    
+    init (name: String, age: Int, weight: Int, height: Int) {
+        self.name = name
+        self.age = age
+        self.weight = weight
+        self.height = height
+        
+        HumanClass.humanTotal += 1
+    }
+}
+
+
+var humanClass = HumanClass(name: "Bob", age: 45, weight: 88, height: 269)
+humanClass
+
+var humanTest = HumanClass(name: "Rob", age: 26, weight: 55, height: 190)
+humanTest.height = 180
+
+HumanClass.humanTotal

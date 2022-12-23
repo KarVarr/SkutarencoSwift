@@ -590,3 +590,9 @@ var humanTest = HumanClass(name: "Rob", age: 26, weight: 55, height: 190)
 humanTest.height = 180
 
 HumanClass.humanTotal
+
+//MARK: - lesson # 16
+
+//вернуться и повторить, сделать ДЗ
+
+

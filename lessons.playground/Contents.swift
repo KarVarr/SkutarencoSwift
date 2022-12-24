@@ -595,4 +595,37 @@ HumanClass.humanTotal
 
 //вернуться и повторить, сделать ДЗ
 
+//MARK: - lesson # 17
 
+struct ChessSubscript {
+    
+    enum Color : String {
+        case Black = "Black"
+        case White = "White"
+    }
+    
+    var letter = ["a", "b", "c", "d", "f", "e", "g", "h"]
+    var number = [1,2,3,4,5,6,7,8]
+    
+    subscript(column: String, row: Int) -> String {
+        get {
+            switch column {
+            case "a", "c", "f", "g": return "wh"
+            case "b", "d", "e", "h": return "bl"
+            default:
+                return "Error, out of range!"
+            }
+            switch row {
+            case 1,3,5,7: return "whnum"
+            case 2,4,6,8: return "blnum"
+            default:
+                return "Error, out of range!"
+            }
+            
+            
+        }
+    }
+}
+
+var chessBoard = ChessSubscript()
+chessBoard["a", 5]
